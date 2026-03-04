@@ -32,28 +32,68 @@ title: Marx Wang
       <p>If any of this resonates &mdash; let's grab coffee and chat!</p>
     </div>
     <ul class="social-links">
-      {% if site.social.github %}<li><a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a></li>{% endif %}
-      {% if site.social.scholar and site.social.scholar != "YOUR_GOOGLE_SCHOLAR_ID" %}<li><a href="https://scholar.google.com/citations?user={{ site.social.scholar }}" target="_blank" rel="noopener">Scholar</a></li>{% endif %}
-      {% if site.social.linkedin %}<li><a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>{% endif %}
-      {% if site.social.twitter and site.social.twitter != "" %}<li><a href="https://x.com/{{ site.social.twitter }}" target="_blank" rel="noopener">X / Twitter</a></li>{% endif %}
+      {% if site.social.github %}
+      <li>
+        <a
+          href="https://github.com/{{ site.social.github }}"
+          target="_blank"
+          rel="noopener"
+          >GitHub</a
+        >
+      </li>
+      {% endif %} {% if site.social.scholar and site.social.scholar !=
+      "YOUR_GOOGLE_SCHOLAR_ID" %}
+      <li>
+        <a
+          href="https://scholar.google.com/citations?user={{ site.social.scholar }}"
+          target="_blank"
+          rel="noopener"
+          >Scholar</a
+        >
+      </li>
+      {% endif %} {% if site.social.linkedin %}
+      <li>
+        <a
+          href="https://linkedin.com/in/{{ site.social.linkedin }}"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+      </li>
+      {% endif %} {% if site.social.twitter and site.social.twitter != "" %}
+      <li>
+        <a
+          href="https://x.com/{{ site.social.twitter }}"
+          target="_blank"
+          rel="noopener"
+          >X / Twitter</a
+        >
+      </li>
+      {% endif %}
       <li><a href="mailto:{{ site.author.email }}">Email</a></li>
     </ul>
   </div>
   <div>
-    <div class="portrait{% if site.author.image_circular %} circular{% endif %}" id="portrait">
+    <div
+      class="portrait{% if site.author.image_circular %} circular{% endif %}"
+      id="portrait"
+    >
       {% if site.author.image and site.author.image != "" %}
-        <img src="{{ '/assets/img/' | append: site.author.image | relative_url }}" alt="{{ site.author.first_name }} {{ site.author.last_name }}">
-      {% else %}
-        {{ site.author.initials }}
-      {% endif %}
+      <img
+        src="{{ '/assets/img/' | append: site.author.image | relative_url }}"
+        alt="{{ site.author.first_name }} {{ site.author.last_name }}"
+      />
+      {% else %} {{ site.author.initials }} {% endif %}
     </div>
-    <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.6rem;">{{ site.author.email | replace: '@', ' at ' | replace: '.', ' dot ' }}</p>
+    <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.6rem">
+      {{ site.author.email | replace: '@', ' at ' | replace: '.', ' dot ' }}
+    </p>
   </div>
 </section>
 
 <!-- Selected Publications -->
 <section id="publications" class="section reveal">
-  <h2>Selected Publications</h2>
+  <h2>Publications</h2>
 
   <ul class="pub-list">
     {% for pub in site.data.publications.under_review %}
@@ -66,28 +106,35 @@ title: Marx Wang
       <div class="pub-authors">{{ pub.authors }}</div>
       {% if pub.preview %}
       <div class="pub-thumb">
-        <img src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}" alt="{{ pub.title }}">
+        <img
+          src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}"
+          alt="{{ pub.title }}"
+        />
       </div>
       {% endif %}
       <div class="pub-links">
-        {% if pub.pdf %}<a href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}">PDF</a>{% endif %}
-        {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+        {% if pub.pdf %}<a
+          href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}"
+          >PDF</a
+        >{% endif %} {% if pub.url %}<a
+          href="{{ pub.url }}"
+          target="_blank"
+          rel="noopener"
+          >Paper</a
+        >{% endif %}
       </div>
     </li>
-    {% endfor %}
-
-    {% for pub in site.data.publications.published %}
+    {% endfor %} {% for pub in site.data.publications.published %}
     <li class="pub-item">
       <div class="pub-header">
-        {% case pub.abbr %}
-          {% when 'CHI' %}
-            <span class="pub-badge badge-chi">{{ pub.abbr }}</span>
-          {% when 'CSCW' %}
-            <span class="pub-badge badge-cscw">{{ pub.abbr }}</span>
-          {% when 'UIST' %}
-            <span class="pub-badge badge-uist">{{ pub.abbr }}</span>
-          {% else %}
-            <span class="pub-badge badge-default">{{ pub.abbr }}</span>
+        {% case pub.abbr %} {% when 'CHI' %}
+        <span class="pub-badge badge-chi">{{ pub.abbr }}</span>
+        {% when 'CSCW' %}
+        <span class="pub-badge badge-cscw">{{ pub.abbr }}</span>
+        {% when 'UIST' %}
+        <span class="pub-badge badge-uist">{{ pub.abbr }}</span>
+        {% else %}
+        <span class="pub-badge badge-default">{{ pub.abbr }}</span>
         {% endcase %}
         <span class="pub-venue">{{ pub.venue }}, {{ pub.year }}</span>
       </div>
@@ -95,12 +142,22 @@ title: Marx Wang
       <div class="pub-authors">{{ pub.authors }}</div>
       {% if pub.preview %}
       <div class="pub-thumb">
-        <img src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}" alt="{{ pub.title }}">
+        <img
+          src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}"
+          alt="{{ pub.title }}"
+        />
       </div>
       {% endif %}
       <div class="pub-links">
-        {% if pub.pdf %}<a href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}">PDF</a>{% endif %}
-        {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+        {% if pub.pdf %}<a
+          href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}"
+          >PDF</a
+        >{% endif %} {% if pub.url %}<a
+          href="{{ pub.url }}"
+          target="_blank"
+          rel="noopener"
+          >Paper</a
+        >{% endif %}
       </div>
     </li>
     {% endfor %}
@@ -118,10 +175,9 @@ title: Marx Wang
         <span class="teach-period">{{ t.period }}</span>
       </div>
       <div class="teach-details">
-        {{ t.course }}
-        {% if t.instructor %} &middot; with {{ t.instructor }}{% endif %}
-        {% if t.students %} &middot; {{ t.students }} students{% endif %}
-        {% if t.note %} ({{ t.note }}){% endif %}
+        {{ t.course }} {% if t.instructor %} &middot; with {{ t.instructor }}{%
+        endif %} {% if t.students %} &middot; {{ t.students }} students{% endif
+        %} {% if t.note %} ({{ t.note }}){% endif %}
       </div>
     </li>
     {% endfor %}
@@ -132,5 +188,10 @@ title: Marx Wang
 <section id="cv" class="section reveal cv-section">
   <h2>CV</h2>
   <p>For the full version, download my CV below.</p>
-  <a class="cv-download" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank">Download CV (PDF)</a>
+  <a
+    class="cv-download"
+    href="{{ '/assets/pdf/cv.pdf' | relative_url }}"
+    target="_blank"
+    >Download CV (PDF)</a
+  >
 </section>
