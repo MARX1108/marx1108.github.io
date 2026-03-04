@@ -10,7 +10,7 @@ title: Marx Wang
     <h1>{{ site.author.first_name }} {{ site.author.last_name }}</h1>
     <div class="hero-bio">
       <p>
-        Hi! I'm a PhD candidate at the University of Washington
+        Hi! 👋 I'm a third year PhD student at the University of Washington
         <a href="https://ischool.uw.edu/">Information School</a>, advised by
         <a href="https://www.alexishiniker.com/">Alexis Hiniker</a> and
         <a href="https://www.anind.com/">Anind Dey</a> at the
@@ -18,18 +18,30 @@ title: Marx Wang
       </p>
       <p>
         My research sits at the intersection of <code>HCI</code> and
-        <code>LLM Alignment</code>. I study how people &mdash; especially young
-        adults &mdash; relate to conversational AI, and what happens when those
-        systems get emotions wrong. I work across qualitative conversation
-        analysis, computational psycholinguistics, and mechanistic
-        interpretability.
+        <code>LLM Affective Alignment</code>. I study how people &mdash;
+        especially young adults &mdash; relate to conversational AI, and what
+        happens when those systems get emotions wrong. My work spans both
+        mix-method empirical studies of how users engage with conversational
+        agents and technical methods for auditing and modulating the emotional
+        behavior of language models. 
+              <p>
+        Some of my recent methods: qualitative
+        conversation analysis grounded in developmental psychology,
+        computational psycholinguistics/NLP (LIWC, NRC-VAD, RoBERTa), and
+        mechanistic interpretability using Sparse Autoencoders to identify and
+        steer affect-aligned features in LLM activations.</p>
       </p>
       <p>
         I also run <a href="https://foryoupage.org/">ForYouPage.org</a>, a
         youth-led nonprofit for mental health advocacy reaching 30,000+ members
-        across 6 continents.
+        across 6 continents. I host conferences at
+        <a href="https://www.foryoupage.org/fyp-2025">UNGA🌍</a>
       </p>
-      <p>If any of this resonates &mdash; let's grab coffee and chat!</p>
+      <p>
+        Outside of research, you can find me doing MMA  🥊  and standup
+        comedy (which collectively prepare me for paper rebuttals one day).
+      </p>
+      <p>If any of this resonates &mdash; let's grab coffee ☕ and chat!</p>
     </div>
     <ul class="social-links">
       {% if site.social.github %}
@@ -100,7 +112,10 @@ title: Marx Wang
     <li class="pub-item{% if pub.preview %} has-preview{% endif %}">
       {% if pub.preview %}
       <div class="pub-thumb">
-        <img src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}" alt="{{ pub.title }}">
+        <img
+          src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}"
+          alt="{{ pub.title }}"
+        />
       </div>
       {% endif %}
       <div class="pub-body">
@@ -111,34 +126,55 @@ title: Marx Wang
         <div class="pub-title">{{ pub.title }}</div>
         <div class="pub-authors">{{ pub.authors }}</div>
         <div class="pub-links">
-          {% if pub.pdf %}<a href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}">PDF</a>{% endif %}
-          {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+          {% if pub.pdf %}<a
+            href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}"
+            >PDF</a
+          >{% endif %} {% if pub.url %}<a
+            href="{{ pub.url }}"
+            target="_blank"
+            rel="noopener"
+            >Paper</a
+          >{% endif %}
         </div>
       </div>
     </li>
-    {% endfor %}
-    {% for pub in site.data.publications.published %}
+    {% endfor %} {% for pub in site.data.publications.published %}
     <li class="pub-item{% if pub.preview %} has-preview{% endif %}">
       {% if pub.preview %}
       <div class="pub-thumb">
-        <img src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}" alt="{{ pub.title }}">
+        <img
+          src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}"
+          alt="{{ pub.title }}"
+        />
       </div>
       {% endif %}
       <div class="pub-body">
         <div class="pub-header">
-          {% case pub.abbr %}
-            {% when 'CHI' %}<span class="pub-badge badge-chi">{{ pub.abbr }}</span>
-            {% when 'CSCW' %}<span class="pub-badge badge-cscw">{{ pub.abbr }}</span>
-            {% when 'UIST' %}<span class="pub-badge badge-uist">{{ pub.abbr }}</span>
-            {% else %}<span class="pub-badge badge-default">{{ pub.abbr }}</span>
+          {% case pub.abbr %} {% when 'CHI' %}<span class="pub-badge badge-chi"
+            >{{ pub.abbr }}</span
+          >
+          {% when 'CSCW' %}<span class="pub-badge badge-cscw"
+            >{{ pub.abbr }}</span
+          >
+          {% when 'UIST' %}<span class="pub-badge badge-uist"
+            >{{ pub.abbr }}</span
+          >
+          {% else %}<span class="pub-badge badge-default">{{ pub.abbr }}</span>
           {% endcase %}
           <span class="pub-venue">{{ pub.venue }}, {{ pub.year }}</span>
         </div>
         <div class="pub-title">{{ pub.title }}</div>
         <div class="pub-authors">{{ pub.authors }}</div>
         <div class="pub-links">
-          {% if pub.pdf %}<a href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}">PDF</a>{% endif %}
-          {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+          {% if pub.pdf %}<a
+            href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}"
+            >PDF</a
+          >{% endif %} {% if pub.url %}<a
+            href="{{ pub.url }}"
+            target="_blank"
+            rel="noopener"
+            >Paper</a
+          >{% endif %}
         </div>
       </div>
     </li>
