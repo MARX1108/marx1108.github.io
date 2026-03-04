@@ -97,67 +97,49 @@ title: Marx Wang
 
   <ul class="pub-list">
     {% for pub in site.data.publications.under_review %}
-    <li class="pub-item">
-      <div class="pub-header">
-        <span class="pub-badge badge-under-review">{{ pub.abbr }}</span>
-        <span class="pub-year">{{ pub.year }}</span>
-      </div>
-      <div class="pub-title">{{ pub.title }}</div>
-      <div class="pub-authors">{{ pub.authors }}</div>
+    <li class="pub-item{% if pub.preview %} has-preview{% endif %}">
       {% if pub.preview %}
       <div class="pub-thumb">
-        <img
-          src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}"
-          alt="{{ pub.title }}"
-        />
+        <img src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}" alt="{{ pub.title }}">
       </div>
       {% endif %}
-      <div class="pub-links">
-        {% if pub.pdf %}<a
-          href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}"
-          >PDF</a
-        >{% endif %} {% if pub.url %}<a
-          href="{{ pub.url }}"
-          target="_blank"
-          rel="noopener"
-          >Paper</a
-        >{% endif %}
+      <div class="pub-body">
+        <div class="pub-header">
+          <span class="pub-badge badge-under-review">{{ pub.abbr }}</span>
+          <span class="pub-year">{{ pub.year }}</span>
+        </div>
+        <div class="pub-title">{{ pub.title }}</div>
+        <div class="pub-authors">{{ pub.authors }}</div>
+        <div class="pub-links">
+          {% if pub.pdf %}<a href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}">PDF</a>{% endif %}
+          {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+        </div>
       </div>
     </li>
-    {% endfor %} {% for pub in site.data.publications.published %}
-    <li class="pub-item">
-      <div class="pub-header">
-        {% case pub.abbr %} {% when 'CHI' %}
-        <span class="pub-badge badge-chi">{{ pub.abbr }}</span>
-        {% when 'CSCW' %}
-        <span class="pub-badge badge-cscw">{{ pub.abbr }}</span>
-        {% when 'UIST' %}
-        <span class="pub-badge badge-uist">{{ pub.abbr }}</span>
-        {% else %}
-        <span class="pub-badge badge-default">{{ pub.abbr }}</span>
-        {% endcase %}
-        <span class="pub-venue">{{ pub.venue }}, {{ pub.year }}</span>
-      </div>
-      <div class="pub-title">{{ pub.title }}</div>
-      <div class="pub-authors">{{ pub.authors }}</div>
+    {% endfor %}
+    {% for pub in site.data.publications.published %}
+    <li class="pub-item{% if pub.preview %} has-preview{% endif %}">
       {% if pub.preview %}
       <div class="pub-thumb">
-        <img
-          src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}"
-          alt="{{ pub.title }}"
-        />
+        <img src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}" alt="{{ pub.title }}">
       </div>
       {% endif %}
-      <div class="pub-links">
-        {% if pub.pdf %}<a
-          href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}"
-          >PDF</a
-        >{% endif %} {% if pub.url %}<a
-          href="{{ pub.url }}"
-          target="_blank"
-          rel="noopener"
-          >Paper</a
-        >{% endif %}
+      <div class="pub-body">
+        <div class="pub-header">
+          {% case pub.abbr %}
+            {% when 'CHI' %}<span class="pub-badge badge-chi">{{ pub.abbr }}</span>
+            {% when 'CSCW' %}<span class="pub-badge badge-cscw">{{ pub.abbr }}</span>
+            {% when 'UIST' %}<span class="pub-badge badge-uist">{{ pub.abbr }}</span>
+            {% else %}<span class="pub-badge badge-default">{{ pub.abbr }}</span>
+          {% endcase %}
+          <span class="pub-venue">{{ pub.venue }}, {{ pub.year }}</span>
+        </div>
+        <div class="pub-title">{{ pub.title }}</div>
+        <div class="pub-authors">{{ pub.authors }}</div>
+        <div class="pub-links">
+          {% if pub.pdf %}<a href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}">PDF</a>{% endif %}
+          {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+        </div>
       </div>
     </li>
     {% endfor %}
