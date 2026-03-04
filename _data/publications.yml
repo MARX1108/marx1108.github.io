@@ -70,6 +70,7 @@ published:
     venue: "AAAI/ACM Conference on AI, Ethics, and Society (AIES '22)"
     year: 2022
     abbr: AIES
+    preview: aies2022_civilwar.png
     url: "https://doi.org/10.1145/3514094.3534141"
 
   - key: wang2022taskscape
@@ -78,6 +79,7 @@ published:
     venue: "UIST '22 Adjunct"
     year: 2022
     abbr: UIST
+    preview: uist2022_taskscape.png
     url: "https://doi.org/10.1145/3526114.3558720"
 
   - key: wang2022echofluid
@@ -86,6 +88,7 @@ published:
     venue: "UIST '22 Adjunct"
     year: 2022
     abbr: UIST
+    preview: uist2022_echofluid.png
     url: "https://doi.org/10.1145/3526114.3558708"
 
   - key: wang2022ithem
@@ -94,6 +97,7 @@ published:
     venue: "UIST '22 Adjunct"
     year: 2022
     abbr: UIST
+    preview: uist2022_ithem.png
     url: "https://doi.org/10.1145/3526114.3558776"
 
   - key: li2021occlusion
@@ -102,6 +106,7 @@ published:
     venue: "Frontiers in Virtual Reality"
     year: 2021
     abbr: Frontiers
+    preview: frontiers2021_occlusion.png
     url: "https://doi.org/10.3389/frvir.2021.681585"
 
   - key: pasad2020groupchat
@@ -110,4 +115,5 @@ published:
     venue: "CSCW '20 Companion"
     year: 2020
     abbr: CSCW
+    preview: cscw2020_groupchat.png
     url: "https://doi.org/10.1145/3406865.3418335"
