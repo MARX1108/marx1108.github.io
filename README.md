@@ -1,8 +1,6 @@
 # Academic Portfolio Starter
 
-This is a configurable one-page portfolio site inspired by:
-- https://jaewonkim.me/
-- https://sohamde.in/
+This is a configurable one-page portfolio site
 
 ## Files
 - `index.html`: page structure
