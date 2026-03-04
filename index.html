@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Portfolio</title>
+    <meta
+      name="description"
+      content="A minimalist academic portfolio with publications, news, and service."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./site.config.js"></script>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <div class="bg-noise" aria-hidden="true"></div>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a id="brand-name" class="brand" href="#top">Portfolio</a>
+        <nav aria-label="Primary">
+          <ul id="nav-links" class="nav-links"></ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" class="container page">
+      <section class="hero reveal">
+        <div class="portrait-wrap">
+          <div id="portrait" class="portrait" role="img" aria-label="Profile"></div>
+        </div>
+        <div class="hero-content">
+          <p id="hero-role" class="hero-role"></p>
+          <h1 id="hero-name"></h1>
+          <p id="hero-tagline" class="hero-tagline"></p>
+          <p>
+            <a id="email-link" class="inline-link" href="#">email</a>
+            <span id="email-display" class="email-display"></span>
+          </p>
+          <ul id="quick-links" class="quick-links"></ul>
+        </div>
+      </section>
+
+      <section id="about" class="panel reveal">
+        <h2>About</h2>
+        <div id="about-content" class="text-block"></div>
+      </section>
+
+      <section id="research" class="panel reveal">
+        <h2>Selected Research</h2>
+        <ol id="research-list" class="research-list"></ol>
+      </section>
+
+      <section class="two-col">
+        <section id="news" class="panel reveal">
+          <h2>Recent News</h2>
+          <ul id="news-list" class="simple-list"></ul>
+        </section>
+        <section id="service" class="panel reveal">
+          <h2>Teaching &amp; Service</h2>
+          <ul id="service-list" class="simple-list"></ul>
+        </section>
+      </section>
+
+      <section id="contact" class="panel reveal">
+        <h2>Contact</h2>
+        <p id="contact-note" class="contact-note"></p>
+        <ul id="contact-links" class="quick-links"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p id="footer-text"></p>
+      </div>
+    </footer>
+  </body>
+</html>
