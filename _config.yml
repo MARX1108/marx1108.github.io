@@ -1,12 +1,13 @@
 title: Marx Wang
-description: PhD Candidate in AI Alignment & Human-Computer Interaction
+description: PhD Candidate @ UW iSchool
 url: "https://marxvwang.com"
 baseurl: ""
+keywords: hci, llm alignment, affective computing, conversational ai
 
-# Build
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -15,36 +16,27 @@ exclude:
   - README.md
   - "Marx Wang's Resume.pdf"
 
-# Sass
 sass:
   sass_dir: _sass
   style: compressed
 
-# Site author
 author:
-  name: Marx Wang
+  first_name: Marx
+  last_name: Wang
+  email: marxwang@uw.edu
   role: PhD Candidate
   affiliation: University of Washington
   department: Information School
-  focus: AI Alignment & Human-Computer Interaction
-  email: marxwang@uw.edu
-  phone: "(540) 998-5525"
-  website: marxvwang.com
-  image: ""
+  image: prof_pic.jpg
+  image_circular: false
   initials: MW
-  bio: >-
-    My research sits at the intersection of HCI and LLM Alignment, examining
-    relational and affective dynamics in human-AI interaction through mixed methods:
-    qualitative conversation analysis grounded in developmental psychology,
-    computational psycholinguistics/NLP, and mechanistic interpretability using
-    Sparse Autoencoders to identify and steer affect-aligned features in LLM activations.
+  subtitle: 'PhD Candidate @ <a href="https://ischool.uw.edu/">UW iSchool</a>'
 
 social:
-  google_scholar: "https://scholar.google.com/"
-  github: "https://github.com/"
-  linkedin: "https://www.linkedin.com/in/marxw"
-  twitter: "https://x.com/"
-  cv: "./Marx%20Wang%27s%20Resume.pdf"
+  github: marx1108
+  scholar: YOUR_GOOGLE_SCHOLAR_ID
+  linkedin: marxw
+  twitter: ""
 
 plugins:
   - jekyll-seo-tag
