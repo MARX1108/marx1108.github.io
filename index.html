@@ -55,63 +55,73 @@ title: Marx Wang
 <section id="publications" class="section reveal">
   <h2>Selected Publications</h2>
 
-  <p class="pub-category">Under Review</p>
   <ul class="pub-list">
     {% for pub in site.data.publications.under_review %}
-    <li class="pub-item{% unless pub.preview %} no-preview{% endunless %}">
+    <li class="pub-item">
+      <div class="pub-header">
+        <span class="pub-badge badge-under-review">{{ pub.abbr }}</span>
+        <span class="pub-year">{{ pub.year }}</span>
+      </div>
+      <div class="pub-title">{{ pub.title }}</div>
+      <div class="pub-authors">{{ pub.authors }}</div>
       {% if pub.preview %}
       <div class="pub-thumb">
         <img src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}" alt="{{ pub.title }}">
       </div>
       {% endif %}
-      <div class="pub-body">
-        <div class="pub-venue">
-          <span class="pub-badge badge-under-review">{{ pub.abbr }}</span>
-          {{ pub.year }}
-        </div>
-        <div class="pub-title">{{ pub.title }}</div>
-        <div class="pub-authors">{{ pub.authors }}</div>
-        <div class="pub-links">
-          {% if pub.pdf %}<a href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}">PDF</a>{% endif %}
-          {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
-        </div>
+      <div class="pub-links">
+        {% if pub.pdf %}<a href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}">PDF</a>{% endif %}
+        {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+
+    {% for pub in site.data.publications.published %}
+    <li class="pub-item">
+      <div class="pub-header">
+        {% case pub.abbr %}
+          {% when 'CHI' %}
+            <span class="pub-badge badge-chi">{{ pub.abbr }}</span>
+          {% when 'CSCW' %}
+            <span class="pub-badge badge-cscw">{{ pub.abbr }}</span>
+          {% when 'UIST' %}
+            <span class="pub-badge badge-uist">{{ pub.abbr }}</span>
+          {% else %}
+            <span class="pub-badge badge-default">{{ pub.abbr }}</span>
+        {% endcase %}
+        <span class="pub-venue">{{ pub.venue }}, {{ pub.year }}</span>
+      </div>
+      <div class="pub-title">{{ pub.title }}</div>
+      <div class="pub-authors">{{ pub.authors }}</div>
+      {% if pub.preview %}
+      <div class="pub-thumb">
+        <img src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}" alt="{{ pub.title }}">
+      </div>
+      {% endif %}
+      <div class="pub-links">
+        {% if pub.pdf %}<a href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}">PDF</a>{% endif %}
+        {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
       </div>
     </li>
     {% endfor %}
   </ul>
+</section>
 
-  <p class="pub-category">Published</p>
-  <ul class="pub-list">
-    {% for pub in site.data.publications.published %}
-    <li class="pub-item{% unless pub.preview %} no-preview{% endunless %}">
-      {% if pub.preview %}
-      <div class="pub-thumb">
-        <img src="{{ '/assets/img/publication_preview/' | append: pub.preview | relative_url }}" alt="{{ pub.title }}">
+<!-- Teaching -->
+<section id="teaching" class="section reveal">
+  <h2>Teaching</h2>
+  <ul class="teach-list">
+    {% for t in site.data.teaching %}
+    <li class="teach-item">
+      <div class="teach-header">
+        <span class="teach-role">{{ t.role }}, {{ t.institution }}</span>
+        <span class="teach-period">{{ t.period }}</span>
       </div>
-      {% endif %}
-      {% unless pub.preview %}
-      <div class="pub-thumb-placeholder">{{ pub.abbr }}</div>
-      {% endunless %}
-      <div class="pub-body">
-        <div class="pub-venue">
-          {% case pub.abbr %}
-            {% when 'CHI' %}
-              <span class="pub-badge badge-chi">{{ pub.abbr }}</span>
-            {% when 'CSCW' %}
-              <span class="pub-badge badge-cscw">{{ pub.abbr }}</span>
-            {% when 'UIST' %}
-              <span class="pub-badge badge-uist">{{ pub.abbr }}</span>
-            {% else %}
-              <span class="pub-badge badge-default">{{ pub.abbr }}</span>
-          {% endcase %}
-          {{ pub.venue }}, {{ pub.year }}
-        </div>
-        <div class="pub-title">{{ pub.title }}</div>
-        <div class="pub-authors">{{ pub.authors }}</div>
-        <div class="pub-links">
-          {% if pub.pdf %}<a href="{{ '/assets/pdf/' | append: pub.pdf | relative_url }}">PDF</a>{% endif %}
-          {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
-        </div>
+      <div class="teach-details">
+        {{ t.course }}
+        {% if t.instructor %} &middot; with {{ t.instructor }}{% endif %}
+        {% if t.students %} &middot; {{ t.students }} students{% endif %}
+        {% if t.note %} ({{ t.note }}){% endif %}
       </div>
     </li>
     {% endfor %}

@@ -1,0 +1,31 @@
+- role: Lecturer
+  institution: University of Washington
+  course: "INFO 380: Information Systems and Management"
+  period: "Fall 2025 – 2026"
+  note: "2 quarters"
+
+- role: Teaching Assistant
+  institution: University of Washington
+  course: "INFO 300: Research Methods"
+  period: "Fall 2023"
+  note: "2 quarters"
+
+- role: Teaching Assistant
+  institution: University of Washington
+  course: "INFO 380: Information Systems and Management"
+  period: "Fall 2023"
+  note: "2 quarters"
+
+- role: Graduate Teaching Assistant
+  institution: Virginia Tech
+  course: "User Interface Software"
+  instructor: "Dr. Kurt Luther"
+  period: "Fall 2021"
+  students: 78
+
+- role: Graduate Teaching Assistant
+  institution: Virginia Tech
+  course: "Professionalism in Computing"
+  instructor: "Dr. Daniel Dunlap"
+  period: "Spring 2022"
+  students: 200
