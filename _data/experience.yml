@@ -1,0 +1,46 @@
+- title: Research Assistant / Senior Data Scientist
+  lab: User Empowerment Lab
+  institution: University of Washington
+  period: "Fall 2023 – Present"
+  highlights:
+    - Developed mechanistic interpretability methods to extract and validate linear "truth directions" from Llama hidden states, implementing claim-boundary token extraction, LDA-based probing, and ghost direction artifact removal.
+    - Engineered a mechanical steering framework for Llama 3.2 to disentangle and manipulate causal directions of model sentiment using Sparse Autoencoders (SAEs) and Contrastive Activation Addition.
+    - Designed computational psycholinguistic approaches and sentiment analysis pipelines to evaluate LLM capacity for emotional attunement across multi-turn conversations.
+    - Analyzed 14,000+ conversation threads to develop a taxonomy of how youth use LLMs for the "transition to adulthood."
+    - Conducted in-depth qualitative analysis of youth self-disclosure to characterize "AI Botsplaining" failure modes.
+    - Investigating how RLHF reward models can inadvertently reinforce maladaptive dependency in anxious users.
+    - Collected and analyzed 200k+ in-the-wild ChatGPT interactions for fine-tuning models to detect vulnerable user states.
+
+- title: Research Assistant / Software Engineer
+  lab: EchoLab
+  institution: Virginia Tech
+  period: "Fall 2019 – 2023"
+  highlights:
+    - Led a team of 3 to design and implement an ML pipeline that visualizes user emotions through auto-suggesting GIFs in real time, achieving 95.6% accuracy.
+    - Built web scraping scripts and collected a dataset of ~1,000,000 GIFs for computational sociolinguistic studies.
+    - Designed user studies with real-time collaborative tasks; engineered 6 novel chat systems in MeteorJS.
+    - Evaluated the UX of Microsoft HoloLens and developed synchronous web apps for VR studies.
+
+- title: Research Assistant / UX Designer
+  lab: Mind Music Machine Lab
+  institution: Virginia Tech
+  period: "Jan 2020 – 2023"
+  highlights:
+    - Designed and implemented EchoFluid, an AI-powered choreography tool using reinforcement learning for real-time dance movement analysis.
+    - Designed mapping systems to translate visual features of art to auditory parameters.
+
+- title: Research Assistant / Software Engineer
+  lab: Affective Neurodynamics and Development Lab
+  institution: Virginia Tech
+  period: "June 2021 – Present"
+  highlights:
+    - Used ML to forecast children's prosocial behaviors, improving model accuracy from 55% to 85%.
+    - Conducted fMRI scan analyses and regression analyses modeling family, neighborhood, and environmental factors.
+
+- title: Research Assistant / Software Engineer
+  lab: Crowd Intelligence Lab
+  institution: Virginia Tech
+  period: "June 2021 – 2023"
+  highlights:
+    - Conducted user research on elderly users' privacy concerns and designed visualizations communicating ethical challenges in AI.
+    - Designed UI/UX of Civil War Twin, an educational website using AI for historical face matching.

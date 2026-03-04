@@ -1,0 +1,133 @@
+# Peer-reviewed publications
+peer_reviewed:
+  - id: "C.3"
+    title: "Decoupling of Usefulness and Novelty: Evaluating the Impact of Generative AI on Design Outputs and Designers' Creative Thinking"
+    authors: "Yue Fu, Tony Zhou, Bin Han, <strong>Marx Wang</strong>, Yixin Chen, Zelia Gomes Da Costa Lai, Rock Pang, Katharina Reinecke, Jacob Wobbrock, Alexis Hiniker"
+    venue: "Proceedings of the ACM on Human-Computer Interaction"
+    venue_short: "CHI"
+    year: 2026
+    links:
+      - label: Paper
+        url: "#"
+
+  - id: "C.1"
+    title: "Understanding the Relationship Between Social Identity and Self-Expression Through Animated GIFs on Social Media"
+    authors: "<strong>Marx Wang</strong> et al."
+    venue: "Proceedings of the ACM on Human-Computer Interaction 8.CSCW1"
+    venue_short: "CSCW"
+    year: 2024
+    links:
+      - label: Paper
+        url: "#"
+
+  - id: "C.2"
+    title: "Piggybacking on IFTTT to Connect Triggers and Actions with JavaScript"
+    authors: "<strong>Marx Wang*</strong>, Daniel Manesh*, Ruipu Hu, and Sang Won Lee"
+    venue: "IEEE Symposium on Visual Languages and Human-Centric Computing"
+    venue_short: "VL/HCC"
+    year: 2024
+    note: "*Equal Contribution"
+    links:
+      - label: Paper
+        url: "#"
+
+  - id: "C.4"
+    title: "Civil War Twin: Exploring Ethical Challenges in Designing an Educational Face Recognition Application"
+    authors: "Manisha Kusuma, Vikram Mohanty, <strong>Marx Wang</strong>, and Kurt Luther"
+    venue: "AAAI/ACM Conference on AI, Ethics, and Society"
+    venue_short: "AIES"
+    year: 2022
+    links:
+      - label: Paper
+        url: "https://doi.org/10.1145/3514094.3534141"
+
+  - id: "J.1"
+    title: "The Effects of Incorrect Occlusion Cues on the Understanding of Bare-handed Referencing in Collaborative Augmented Reality"
+    authors: "Yuan Li, Donghan Hu, <strong>Marx Wang</strong>, Doug A Bowman, and Sang Won Lee"
+    venue: "Frontiers in Virtual Reality"
+    venue_short: "Frontiers"
+    year: 2021
+    links:
+      - label: Paper
+        url: "https://doi.org/10.3389/frvir.2021.681585"
+
+# Posters, demos, and workshops
+posters:
+  - id: "P.1"
+    title: "TaskScape: Fostering Holistic View on To-do List With Tracking Plan and Emotion"
+    authors: "<strong>Marx Wang</strong> and Sang Won Lee"
+    venue: "ACM Symposium on User Interface Software and Technology"
+    venue_short: "UIST"
+    year: 2022
+    links:
+      - label: Paper
+        url: "https://doi.org/10.1145/3526114.3558720"
+
+  - id: "P.2"
+    title: "Echofluid: An Interface for Remote Choreography Learning and Co-creation Using Machine Learning Techniques"
+    authors: "<strong>Marx Wang</strong>, Zachary Duer, Scotty Hardwig, Sam Lally, Alayna Ricard, and Myounghoon Jeon"
+    venue: "ACM Symposium on User Interface Software and Technology"
+    venue_short: "UIST"
+    year: 2022
+    links:
+      - label: Paper
+        url: "https://doi.org/10.1145/3526114.3558708"
+
+  - id: "P.3"
+    title: "iThem: Programming Internet of Things Beyond Trigger-Action Pattern"
+    authors: "<strong>Marx Wang</strong>, Daniel Manesh, Ruipu Hu, and Sang Won Lee"
+    venue: "ACM Symposium on User Interface Software and Technology"
+    venue_short: "UIST"
+    year: 2022
+    links:
+      - label: Paper
+        url: "https://doi.org/10.1145/3526114.3558776"
+
+  - id: "P.4"
+    title: "Predicting Prosocial Behavior in Childhood and Early Adolescence by Integrating Parental Factors, Neighborhoods and The Brain"
+    authors: "<strong>Marx Wang</strong>, Ya-Yun Chen, Tae-Ho Lee"
+    venue: "Biennial Meeting of the Society for Research on Adolescence"
+    venue_short: "SRA"
+    year: 2022
+
+  - id: "P.5"
+    title: "Predicting Aggressive Behavior in Childhood and Early Adolescence with the Socioecological Approach: From Neighborhoods, and The Brain"
+    authors: "Ya-Yun Chen, <strong>Marx Wang</strong>, Tae-Ho Lee"
+    venue: "The 14th Annual Meeting of the Social & Affective Neuroscience Society"
+    venue_short: "SANS"
+    year: 2022
+
+  - id: "P.6"
+    title: "Understanding the Challenges of Online Group Chat for Productive Discourse at Scale"
+    authors: "Viral Pasad, <strong>Marx Wang</strong>, and Sang Won Lee"
+    venue: "Conference Companion Publication of CSCW"
+    venue_short: "CSCW"
+    year: 2020
+    links:
+      - label: Paper
+        url: "https://doi.org/10.1145/3406865.3418335"
+
+  - id: "W.1"
+    title: "Find Your Twin in History: Exploring Ethical Design Challenges in Facial Recognition"
+    authors: "Vikram Mohanty, <strong>Marx Wang</strong>, David Thames, Manisha Kusuma, and Kurt Luther"
+    venue: "Conference Companion Publication of CSCW (Ethics in Design Workshop)"
+    venue_short: "CSCW"
+    year: 2020
+
+# Under submission
+under_submission:
+  - title: "How Young People are Using ChatGPT for Social Support"
+    authors: "<strong>Marx Wang</strong>, Songling Ngo, Raghavi Putluri, Rachel A. Hanebutt, Shirin Amouei, Robert Wolfe, Katie Davis, Alexis Hiniker"
+    year: 2025
+
+  - title: "Botsplaining Human Vulnerability: An In-Depth Case Study of Youth Self Disclosure with ChatGPT"
+    authors: "<strong>Marx Wang</strong>, Songling Ngo, Raghavi Putluri, Rachel A. Hanebutt, Shirin Amouei, Robert Wolfe, Katie Davis, Alexis Hiniker"
+    year: 2025
+
+  - title: "From Emotional Mirroring to Emotional Attunement: Do LLMs and Humans Attune to Each Other"
+    authors: "<strong>Marx Wang</strong>, Robert Wolfe, Songling Ngo, Raghavi Putluri, Alexis Hiniker"
+    year: 2025
+
+  - title: "Do Attachment Styles Shape Conversational Agent Usage?"
+    authors: "<strong>Marx Wang</strong>, Robert Wolfe, Alexis Hiniker"
+    year: 2026
